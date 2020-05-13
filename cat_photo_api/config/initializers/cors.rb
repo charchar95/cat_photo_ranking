@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins  'https://cat-photo-ranking-api.herokuapp.com',
+    origins  'https://cat-photo-ranking-api.herokuapp.com', 'https://cat-photo-ranking-client.herokuapp.com',
 
     resource '*',
       headers: :any,
